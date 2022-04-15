@@ -3,16 +3,17 @@ from datetime import date
 
 class Mallard:
 
-    def __init__(self, name, species):
+    def __init__(self, name, species, shift):
         # Establish the properties of each animal
         # with a default value
         self.name = name
         self.species = species
         self.date_added = date.today()
         self.walking = True
+        self.shift = shift
         
         
-daisy = Mallard("Daisy", "Mallard Wild Duck")  
+daisy = Mallard("Daisy", "Mallard Wild Duck", "morning") 
 
 print(daisy.name)    
 #prints Daisy          
