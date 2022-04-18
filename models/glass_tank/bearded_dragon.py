@@ -3,7 +3,7 @@ from datetime import date
 
 class BeardedDragon:
 
-    def __init__(self, name, species, shift):
+    def __init__(self, name, species, shift, food):
         # Establish the properties of each animal
         # with a default value
         self.name = name
@@ -11,9 +11,8 @@ class BeardedDragon:
         self.date_added = date.today()
         self.walking = True
         self.shift = shift
+        self.food = food
         
         
-gandalf = BeardedDragon("Gandalf", "White Bearded Dragon", "afternoon")  
-
-print(f'{gandalf.name} the {gandalf.species} is available to pet during the {gandalf.shift} shift.')
-# prints Gandalf the White Bearded Dragon is available to pet during the afternoon shift.       
+    def feed(self):
+        print(f'{self.name} was fed {self.food} on {date.today().strftime("%m/%d/%Y")}')    
