@@ -3,7 +3,7 @@ from datetime import date
 
 class Mallard:
 
-    def __init__(self, name, species, shift):
+    def __init__(self, name, species, shift, food):
         # Establish the properties of each animal
         # with a default value
         self.name = name
@@ -11,9 +11,9 @@ class Mallard:
         self.date_added = date.today()
         self.walking = True
         self.shift = shift
+        self.food = food
         
         
-daisy = Mallard("Daisy", "Mallard Wild Duck", "morning") 
-
-print(daisy.name)    
-#prints Daisy          
+    def feed(self):
+        print(f'{self.name} was fed {self.food} on {date.today().strftime("%m/%d/%Y")}')        
+                
