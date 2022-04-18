@@ -15,6 +15,4 @@ class Alligator:
         
         
     def feed(self):
-        print(f'{self.name} was fed {self.food} on {date.today().strftime("%m/%d/%Y")}')        
-        
-        
+        print(f'{self.name} was fed {self.food} on {date.today().strftime("%m/%d/%Y")}')

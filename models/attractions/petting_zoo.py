@@ -5,5 +5,10 @@ class PettingZoo:
         self.description = description
         self.animals = list()
 
+    @property
     def add_animal(self, animal):
         self.animals.append(animal)
+    def last_critter_added(self):
+        return f'{self.animals[-1]}'    
+        
+        

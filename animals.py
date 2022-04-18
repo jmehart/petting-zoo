@@ -8,12 +8,17 @@ critter_cove = Wetlands("Critter Cove", "feathered friends and fantastic fish")
 
 dino = Alligator("Dino", "American Alligator", "afternoon", "duck pate")
 
-print(dino.feed())  
+print(dino.feed()) 
 #prints Dino was fed duck pate on 04/15/2022
 
-parmesan = Goldfish("Parmesan", "Meteor Goldfish", "fish food")  
+parmesan = Goldfish("Parmesan", "Meteor Goldfish", "fish food", 123789)  
 
-print(parmesan.name)    
+# This should not change the state of the object
+parmesan.chip_number = 555783
+
+# But printing it should work
+print(parmesan.chip_number)
+#prints 123789
 
 troy = Koi("Troy", "Kohaku Koi", "fish food")  
 
