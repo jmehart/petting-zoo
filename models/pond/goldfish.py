@@ -1,30 +1,11 @@
-# import the python datetime module to help us create a timestamp
-from datetime import date
+from models import Animal, Swimming
 
-class Goldfish:
+class Goldfish(Animal, Swimming):
 
     def __init__(self, name, species, food, chip_num):
-        # Establish the properties of each animal
-        # with a default value
-        self.name = name
-        self.species = species
-        self.date_added = date.today()
+        Animal.__init__(self, name, species, food, chip_num)
+        Swimming.__init__(self)
         self.swimming = True
-        self.food = food
-        self.__chip_number = chip_num
-    # setting class data type enforcer
-    @property
-    # getter returns privately scoped attribute
-    def chip_num(self):
-      return self.__chip_number
-    # setter prevents user from changing chip_number value to keep permanent
-    @chip_num.setter
-    def chip_number(self, number):
-      pass
-        
-        
-    def feed(self):
-        print(f'{self.name} was fed {self.food} on {date.today().strftime("%m/%d/%Y")}')        
-        
-        
-        
+
+    def __str__(self):
+        return f"{self.name} the {self.species}"
