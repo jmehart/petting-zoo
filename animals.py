@@ -38,6 +38,8 @@ critter_cove.add_animal(troy)
 critter_cove.add_animal(daisy)
 critter_cove.add_animal(reggie)
 
+print(critter_cove.last_critter_added)
+
 
 
 varmint_village = PettingZoo("Varmint Village", "cute and fuzzy critters to cuddle")  
@@ -67,6 +69,8 @@ varmint_village.add_animal(billy)
 varmint_village.add_animal(tina)
 varmint_village.add_animal(wilbur)
 varmint_village.add_animal(lola)
+
+print(varmint_village.last_critter_added)
 
 
 
@@ -99,6 +103,8 @@ slither_inn.add_animal(frank)
 slither_inn.add_animal(draco)
 slither_inn.add_animal(gandalf)
 slither_inn.add_animal(snape)
+
+print(slither_inn.last_critter_added)
 
 
 
