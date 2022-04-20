@@ -1,3 +1,4 @@
+from datetime import date
 from models.animals.animals import Animal
 from models.movements.swimming import Swimming
 
@@ -9,4 +10,7 @@ class Turtle(Animal, Swimming):
         self.swimming = True
 
     def __str__(self):
-        return f"{self.name} the {self.species}"   
+        return f"{self.name} the {self.species}"
+    
+    def feed(self):
+        print(f'{self.name} ate {self.food} on {date.today()} and then snapped at Tina')   

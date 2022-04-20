@@ -14,5 +14,5 @@ class Llama(Animal, Walking):
     def __str__(self):
         return f"{self.name} the {self.species}"
     
-    def feed(self):
-        print(f'on {date.today()}, {self.name} had "Rockytop" sung to it so it would eat its {self.food}')
+    def feed_llama(self):
+        print(f'On {date.today()}, {self.name} had "Rockytop" sung to it so it would eat its {self.food}')

@@ -1,3 +1,4 @@
+from datetime import date
 from models.animals.animals import Animal
 from models.movements.slithering import Slithering
 
@@ -9,4 +10,7 @@ class BallPython(Animal, Slithering):
 
     def __str__(self):
         return f"{self.name} the {self.species}"
-        
+    
+    
+    def feed(self):
+        print(f'{self.name} ate a boy named Dudley instead of eating {self.food} on {date.today()}')      
