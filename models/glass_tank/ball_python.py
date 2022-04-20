@@ -1,4 +1,5 @@
-from models import Animal, Slithering
+from models.animals.animals import Animal
+from models.movements.slithering import Slithering
 
 class BallPython(Animal, Slithering):
 
