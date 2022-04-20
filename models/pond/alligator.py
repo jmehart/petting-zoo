@@ -1,18 +1,12 @@
-# import the python datetime module to help us create a timestamp
-from datetime import date
+from models.animals.animals import Animal
+from models.movements.walking import Walking
 
-class Alligator:
+class Alligator(Animal, Walking):
 
-    def __init__(self, name, species, shift, food):
-        # Establish the properties of each animal
-        # with a default value
-        self.name = name
-        self.species = species
-        self.date_added = date.today()
-        self.walking = True
+    def __init__(self, name, species, shift, food, chip_num):
+        Animal.__init__(self, name, species, food, chip_num)
+        Walking.__init__(self)
         self.shift = shift
-        self.food = food
-        
-        
-    def feed(self):
-        print(f'{self.name} was fed {self.food} on {date.today().strftime("%m/%d/%Y")}')
+
+    def __str__(self):
+        return f"{self.name} the {self.species}"

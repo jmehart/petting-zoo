@@ -1,12 +1,10 @@
 from models import Alligator, Goldfish, Koi, Mallard, Turtle, Donkey, Goat, Llama, Pig, Rabbit, BallPython, BeardedDragon, Copperhead, LeopardGecko, RatSnake, PettingZoo, SnakePit, Wetlands
 
 
-# MAIN MODULE
-
 
 critter_cove = Wetlands("Critter Cove", "feathered friends and fantastic fish")
 
-dino = Alligator("Dino", "American Alligator", "afternoon", "duck pate")
+dino = Alligator("Dino", "American Alligator", "afternoon", "duck pate", 606060)
 
 print(dino.feed()) 
 #prints Dino was fed duck pate on 04/15/2022
@@ -20,15 +18,15 @@ parmesan.chip_number = 555783
 print(parmesan.chip_number)
 #prints 123789
 
-troy = Koi("Troy", "Kohaku Koi", "fish food")  
+troy = Koi("Troy", "Kohaku Koi", "fish food", 876523)  
 
 print(troy.name)    
 
-daisy = Mallard("Daisy", "Mallard Wild Duck", "morning", "escargot") 
+daisy = Mallard("Daisy", "Mallard Wild Duck", "morning", "escargot", 982556) 
 
 print(daisy.name)
 
-reggie = Turtle("Reggie", "Ridgeback Turtle", "squash")  
+reggie = Turtle("Reggie", "Ridgeback Turtle", "squash", 123987)  
 
 print(reggie.name)
 
@@ -44,23 +42,23 @@ print(critter_cove.last_critter_added)
 
 varmint_village = PettingZoo("Varmint Village", "cute and fuzzy critters to cuddle")  
 
-eddie = Donkey("Eddie", "Domestic Donkey", "morning", "waffles") 
+eddie = Donkey("Eddie", "Domestic Donkey", "morning", "waffles", 234567) 
 
 print(eddie.name)
 
-billy = Goat("Billy", "Mountain Goat", "midday", "grass")  
+billy = Goat("Billy", "Mountain Goat", "midday", "grass", 876543)  
 
 print(billy.name) 
 
-tina = Llama("Tina", "Lama Glama", "afternoon", "casserole")  
+tina = Llama("Tina", "Lama Glama", "afternoon", "casserole", 345677)  
 
 print(tina.name)  
 
-wilbur = Pig("Wilbur", "Pot-bellied Pig", "morning", "corn") 
+wilbur = Pig("Wilbur", "Pot-bellied Pig", "morning", "corn", 543457) 
 
 print(wilbur.name) 
 
-lola = Rabbit("Lola", "American Fuzzy Lop Rabbit", "midday", "carrots")  
+lola = Rabbit("Lola", "American Fuzzy Lop Rabbit", "midday", "carrots", 257955)  
 
 print(lola.name)
 
@@ -76,24 +74,24 @@ print(varmint_village.last_critter_added)
 
 slither_inn = SnakePit("Slither Inn", "stupendous snakes of all sizes")
 
-stuart = RatSnake("Stuart", "Black Rat Snake", "mice")  
+stuart = RatSnake("Stuart", "Black Rat Snake", "mice", 123456)  
 
 print(stuart.name)    
 
-frank = LeopardGecko("Frank", "Common Leopard Gecko", "afternoon", "crickets")  
+frank = LeopardGecko("Frank", "Common Leopard Gecko", "afternoon", "crickets", 777744)  
 
 print(frank.name)    
 
-draco = Copperhead("Draco", "Eastern Copperhead Snake", "mice")  
+draco = Copperhead("Draco", "Eastern Copperhead Snake", "mice", 333775)  
 
 print(draco.name)  
 
-gandalf = BeardedDragon("Gandalf", "White Bearded Dragon", "afternoon", "crickets")  
+gandalf = BeardedDragon("Gandalf", "White Bearded Dragon", "afternoon", "crickets", 888532)  
 
 print(f'{gandalf.name} the {gandalf.species} is available to pet during the {gandalf.shift} shift.')
 # prints Gandalf the White Bearded Dragon is available to pet during the afternoon shift.   
 
-snape = BallPython("Snape", "Royal Ball Python Snake", "mice")  
+snape = BallPython("Snape", "Royal Ball Python Snake", "mice", 157777)  
 
 print(snape) 
 # prints Snape is a Royal Ball Python Snake because of the __str__ magic method on class
