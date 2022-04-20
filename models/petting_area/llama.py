@@ -1,6 +1,7 @@
 # import the python datetime module to help us create a timestamp
 from datetime import date
-from models import Animal, Walking
+from models.animals.animals import Animal
+from models.movements.walking import Walking
 
 # Designate Llama as a child class by adding (Animal) after the class name
 class Llama(Animal, Walking):

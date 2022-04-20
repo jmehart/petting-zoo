@@ -1,4 +1,5 @@
-from models import Animal, Swimming
+from models.animals.animals import Animal
+from models.movements.swimming import Swimming
 
 class Goldfish(Animal, Swimming):
 

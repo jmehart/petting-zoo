@@ -1,4 +1,5 @@
-from models import Animal, Walking
+from models.animals.animals import Animal
+from models.movements.walking import Walking
 
 class BeardedDragon(Animal, Walking):
 
